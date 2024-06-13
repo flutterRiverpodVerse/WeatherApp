@@ -1,6 +1,6 @@
-import 'package:weather_app/core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:weather_app/core/constants/app_colors.dart';
 
 class CustomCheckBoxTheme {
   CustomCheckBoxTheme._();
@@ -12,18 +12,18 @@ class CustomCheckBoxTheme {
         4.r,
       ),
     ),
-    checkColor: MaterialStateProperty.resolveWith(
+    checkColor: WidgetStateProperty.resolveWith(
       (states) {
-        if (states.contains(MaterialState.selected)) {
+        if (states.contains(WidgetState.selected)) {
           return AppColors.white;
         } else {
           return AppColors.black;
         }
       },
     ),
-    fillColor: MaterialStateProperty.resolveWith(
+    fillColor: WidgetStateProperty.resolveWith(
       (states) {
-        if (states.contains(MaterialState.selected)) {
+        if (states.contains(WidgetState.selected)) {
           return Colors.blue;
         } else {
           return Colors.transparent;
@@ -39,18 +39,18 @@ class CustomCheckBoxTheme {
         4.r,
       ),
     ),
-    checkColor: MaterialStateProperty.resolveWith(
+    checkColor: WidgetStateProperty.resolveWith(
       (states) {
-        if (states.contains(MaterialState.selected)) {
+        if (states.contains(WidgetState.selected)) {
           return AppColors.white;
         } else {
           return AppColors.black;
         }
       },
     ),
-    fillColor: MaterialStateProperty.resolveWith(
+    fillColor: WidgetStateProperty.resolveWith(
       (states) {
-        if (states.contains(MaterialState.selected)) {
+        if (states.contains(WidgetState.selected)) {
           return Colors.blue;
         } else {
           return Colors.transparent;
